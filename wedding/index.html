@@ -2,6 +2,9 @@
     <head>
         <title>The Best Wedding web site </title>
         <style>
+            *{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
             header{
                 /* position: fixed; */
                 display: flex;
@@ -50,6 +53,10 @@
             .hero-image{
                 border-radius: 500px;
                 min-height: 150px;
+            }
+            .hero-image:hover{
+                transition: 1s;
+                transform: scale(1.1);
             }
             .box-2{
                 display: flex;
@@ -104,10 +111,11 @@
                 align-items: center;
             }
             .photo-1{
-                border: 10px solid rgb(21, 68, 21);
+                border: 5px solid rgb(21, 68, 21);
                 padding: 5px;
                 margin: 5px;
                 margin-bottom: 1px;
+                box-shadow: 0px 0px 20px rgb(6, 35, 6);
             }
             .text-1{
                font-size: 2.5rem; 
@@ -132,13 +140,14 @@
                 background-color: rgba(228, 228, 228, 0.646);
                 min-height: 60vh;
                 display: flex;
-                gap: 700px;
+                /* gap: 700px; */
                 font-size: 1.5rem;
                 padding: 30px;
                 color: rgb(26, 55, 26);
+                justify-content: space-between;
             }
             .list{
-                padding: 31px;
+                /* padding: 31px; */
             }
         </style>
     </head>
@@ -249,7 +258,7 @@
                     </div>
                     <div class="photo-1">
                         <img src="https://cdn.prod.website-files.com/66e9283b0d4336770ecbaa0f/66e9283b0d4336770ecbab61_helena-lopes-ueMLnIwlrlE-unsplash.webp" alt="" width="170">
-                        <center><p style="font-size: 1.1rem; color: green;">LOVE</p></center>
+                        <center><p style="font-size: 1.1rem; color: green;"><i><u><b>LOVE</b></u></i></p></center>
                     </div>
                     <div class="photo-1">
                         <img src="https://cdn.prod.website-files.com/66e9283b0d4336770ecbaa0f/66e9283b0d4336770ecbab44_coffee%20shop.webp" alt="" width="170">
@@ -258,14 +267,14 @@
                    <div class="top-img">
                     <div class="photo-1">
                         <img src="https://cdn.prod.website-files.com/66e9283b0d4336770ecbaa0f/66e9283b0d4336770ecbab68_neom-Nowd8MgUK8A-unsplash.webp" alt="" width="170">
-                        <center><p style="font-size: 3rem; color: rgb(2, 114, 2);">I</p></center>
+                        <center><p style="font-size: 3rem; color: rgb(2, 114, 2);"><i><u><b>I</b></u></i></p></center>
                     </div>
                     <div class="photo-1">
                         <img src="https://cdn.prod.website-files.com/66e9283b0d4336770ecbaa0f/66e9283b0d4336770ecbab6e_nadine-rupprecht-EH8QHTF8FzY-unsplash.webp" alt="" width="180">
                     </div>
                     <div class="photo-1">
                         <img src="https://cdn.prod.website-files.com/66e9283b0d4336770ecbaa0f/66e9283b0d4336770ecbab60_sea%202.webp" alt="" width="170">
-                        <center><p style="font-size: 2rem; color: green;">YOU</p></center>
+                        <center><p style="font-size: 2rem; color: green;"><i><u><b>YOU</b></u></i></p></center>
                     </div>
                    </div>
                 </div>
@@ -288,16 +297,23 @@
              <footer>
                  <div class="welcom">
                     <h5 style="font-size: 1.5rem;">Amanda & Jonathan</h5>
-                    <p style="font-size: 1.1rem;">Welcome to the tapestry of our lives. We're Amanda & Jonathan, two hearts that found a harmonious rhythm in the symphony of life. Our 'little about' is a snapshot of the vibrant colors we bring to each other’s worlds.</p>
+                    <p style="font-size: 1.1rem;">Welcome to the tapestry of our lives. We're Amanda <br> & Jonathan, two hearts that found a harmonious <br>rhythm in the symphony of life. Our 'little about' is a <br>snapshot of the vibrant colors we bring to each other's <br>worlds.</p>
                     
                  </div>
                  <div class="list">
-                    <h5>RSVP</h5>
-                    <h5>Schedule</h5>
-                    <h5>Our Story</h5>
-                    <h5>FAQ</h5>
-                    <h5>Buy Template</h5>
+                    <p>RSVP</p>
+                    <p>Schedule</p>
+                    <p>Our Story</p>
+                    <p>FAQ</p>
+                    <p>Buy Template</p>
                  </div>
+
+                 <!-- <div class="last-line">
+                    <p>Licenses</p>
+                    <p>Style Guide</p>
+                    <p>Change Log</p>
+                    <p>Instructions</p>
+                 </div> -->
              </footer> <hr>
     </body>
 </html>
