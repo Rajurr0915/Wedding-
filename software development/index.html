@@ -1,0 +1,587 @@
+<html>
+    <head>
+        <title>Software development</title>
+        <style>
+            header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0px;
+                padding: 15px;
+            }
+            .con-btn{
+                border-radius: 20px;
+                border:2px solid black;
+                padding: 10px;
+                min-width: 100px;
+                background-color: #fff;
+
+            }
+            .con-btn:hover{
+                transition: 1s;
+                transform: scale(1.1);
+            }
+            .head{
+                display: flex;
+                align-items: center;
+                gap: 25px;
+            }
+            .job-1{
+                text-decoration: none;
+                color: black;
+                
+            }
+            .job-1:hover{
+                color: blue;
+            }
+            .post-job{
+                border-radius: 20px;
+                border:0px solid black;
+                padding: 10px;
+                min-width: 150px;
+                background-color: #244eda;
+                color: #fff;
+                font-size: 2.5vh;
+                min-height: 30px;
+            }
+            .Soft-1{
+                font-size: 50px;
+                margin: 30px;
+                filter: drop-shadow(2px 2px 2px rgb(114, 91, 249));
+            }
+            .Soft-1:hover{
+                transition: 1s;
+                transform: translateX(20px);
+                filter: drop-shadow(2px 2px 2px green );
+            }
+            .company{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                color: #ffffff82;
+                font-size: 1.7rem;
+            }
+            .first{
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                font-size: 1.1rem;
+            }
+            .left-box{
+                flex: 1;
+                border: 2px solid black;
+                padding: 20px;
+                background-color: #133654;
+                color: #ffffff;
+                /* width: 560px; */
+                border-radius: 20px;
+                font-size: 1.5rem;
+                /* height: 500px; */
+                font-weight: 700;
+            }
+            .left-box{
+                flex: 1;
+            }
+            .right-box{
+                 flex: 1;
+            }
+            .right-box{
+                flex: 1;
+                border: 2px solid black;
+                padding: 20px;
+                background-color: #13544E;
+                color: #ffffff;
+                /* width: 560px; */
+                border-radius: 20px;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+            .two-box{
+                display: flex;
+                margin: 10px;
+                padding: 30px;
+                gap: 20px;
+            }
+            .job-box{
+                display: flex;
+                gap:0px;
+                /* align-items: center; */
+                justify-content: space-between;
+            }
+            .job-box1{
+                border: 1px solid rgb(221, 214, 214);
+                border-radius: 20px;
+                /* padding: 20px; */
+                margin: 10px;
+                height: 260px;
+                width: 390px;
+                box-shadow: 0px 0px 5px rgb(12, 43, 12);
+
+            }
+            .job-box1:hover{
+                background-color: rgba(228, 227, 227, 0.596);
+                transition: 0.5s;
+            }
+            .ancher-tag{
+                text-decoration: none;
+                color: black;
+            }
+            .ancher-tag-2{
+                text-decoration: none;
+                color: black;
+            }
+            .ancher-tag-3{
+                text-decoration: none;
+                color: black;
+            }
+            .text1{
+                font-size: 1.1rem;
+            }
+            .look{
+                font-size: 13px;
+            }
+            .recent{
+                margin: 25px;
+                font-size:2.5rem;
+            }
+            .react{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                border: 1px solid rgb(190, 181, 181);
+                /* justify-content: space-between; */
+                gap: 20px;
+                min-height: 70px;
+                height: 70px;
+                padding: 10px;
+                border-radius: 30px;
+                margin: 20px;
+            }
+            .react:hover{
+                background-color: rgba(230, 230, 230, 0.557);
+            }
+            .recent-job{
+                margin: 20px;
+            }
+            .recent-job{
+                flex: 3;
+            }
+            .work{
+                border: 1px solid rgb(190, 190, 190);
+                padding: 10px;
+                margin: 10px;
+                height: 200px;
+                width: 200px;
+                font-size: 1.2rem;
+                border-radius: 20px;
+                position: relative;
+            }
+            .work:hover{
+                background-color: #dddddd71;
+            }
+            .work{
+                flex: 1;
+            }
+            .rct-job1{
+                display: flex;
+            }
+            .job-btn{
+                border: 1px solid black;
+                padding: 20px;
+                border-radius: 20pc;
+                background-color: rgba(240, 240, 240, 0.498);
+                min-width: 180px;
+                box-shadow: 0px 0px 10px black;
+            
+            }
+            .Dev-1{
+                display: flex;
+                gap: 10px;
+            }
+            .image1{
+                display: flex;
+                gap: 10px;
+                
+            }
+            .book{
+                display: flex;
+                text-align: center;
+                justify-content: space-between;
+                margin: 20px;
+            }
+            .img-1{
+                border: 1px solid rgb(214, 212, 212);
+                border-radius: 30px;
+                padding: 20px;
+            }
+           .img-1:hover{
+                filter: drop-shadow(0px 0px 30px rgb(13, 66, 13) );
+                transition: 1s;
+                transform: scale(1.1);
+            }
+            .cladd1{
+                display: flex;
+                justify-content: space-between;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <div class="head"> 
+                <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f75553_logo-new.svg" alt=" Loading....?" width="80">
+                <button class="con-btn">Contact</button>
+                <a class="job-1" href="./Find a job.html"> Find a job</a>
+            </div>
+            <div>
+                <button class="post-job"> Post a job </button>
+            </div>
+        </header> <hr> <br><br><br>
+
+        <h1 class="Soft-1">The #1 job board for <br> software development</h1>
+        <br>
+
+        <div class="two-box">
+
+            <div class="left-box">
+                <div class="company">
+                    <img class="hero-img1" src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f75551_company-05.png" alt="lazy" width="70"> 
+                    <p>Company XYZ</p>
+                </div>
+                <p>”One of the main advantages of posting jobs  <br>on Devtask is the skill level of the applicants. <br> Some of the best talents in our team were <br>found here.”</p>
+              
+                <p>John Wick, CTO</p> 
+                
+                <p>Results</p>
+                <hr>
+                <div class="first">
+                        <div>
+                            <h1>3-4x faster</h1>
+                            <p>to find our talents</p>
+                        </div>
+                        <div>
+                            <h1>+30</h1>
+                            <p>professionals hired</p>
+                        </div>
+                </div>
+            </div>
+    
+            <div class="right-box">
+                <div class="company">
+                    <img class="hero-img1" src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f75552_tommy.png" alt="lazy" width="70"> 
+                    <p>Tommy Abha</p>
+                </div>
+                <p>”Using Devtalk lead me to amazing freelancing <br>gigs and ultimately to a dream  job at a major <br>tech company.”</p>
+            
+                <p>iOS developer at RockCode</p> 
+                 
+                <p>Results</p>
+                <hr>
+                <div class="first">
+                        <div>
+                            <h1>+40</h1>
+                            <p>freelancing gigs</p>
+                        </div>
+                        <div>
+                            <h1>1</h1>
+                            <p>full-time hiring</p>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+         
+        <h1 style="margin: 30px;">Featured jobs</h1>
+
+
+        <div class="job-box">
+
+            <a class="ancher-tag" href="./Senior iOS Developer.html">
+                <div class="job-box1">
+                    <center>
+                      <img src="https://cdn.prod.website-files.com/66e9839528db1d093c7c83a9/66e98a940b581015b5f0b357_company-01.png" alt="wait..." width="70">
+                      <p style="color: gray;">Company XY . full-time</p>
+                      <h1 class="text1">Senior iOS Developer</h1>
+                      <p class="look" style="border: 1px rgb(245, 69, 69) solid; background-color: rgba(255, 235, 235, 0.817); border-radius: 20px; width: 120px; padding: 3px; color: rgb(118, 31, 31);">in the spotlight</p>
+                      <div class="USA">
+                          <p class="look" style="border: 1px rgb(69, 245, 122) solid; background-color: rgb(235, 252, 235); border-radius: 20px; width: 120px; padding: 3px; color: green;">New York , USA</p>
+                          <!-- <p style="border: 1px rgb(84, 245, 69) solid; background-color: rgb(237, 255, 237); border-radius: 20px; width: 120px; padding: 3px; color: green;">Remote</p> -->
+                      </div>
+                    </center>
+              </div>
+            </a>
+        
+
+        <a class="ancher-tag-2" href="">
+            <div class="job-box1">
+                <center>
+                  <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75516_company-05.png" alt="wait..." width="70">
+                  <p style="color: gray;">Company MN . full-time</p>
+                  <h1 class="text1">AI / ML Engineer</h1>
+                  <p class="look" style="border: 1px rgb(245, 69, 69) solid; background-color: rgb(255, 235, 235); border-radius: 20px; width: 120px; padding: 3px; color: rgb(118, 31, 31);">in the spotlight</p>
+                  <div class="USA">
+                      <p class="look" style="border: 1px rgb(69, 245, 122) solid; background-color: rgb(235, 252, 235); border-radius: 20px; width: 160px; padding: 3px; color: green;">San Francisco , USA</p>
+                      <!-- <p style="border: 1px rgb(84, 245, 69) solid; background-color: rgb(237, 255, 237); border-radius: 20px; width: 120px; padding: 3px; color: green;">Remote</p> -->
+                  </div>
+                </center>
+          </div>
+        </a>
+    
+
+    <a class="ancher-tag-3" href="">
+        <div class="job-box1">
+            <center>
+              <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75517_company-06.png" alt="wait..." width="70">
+              <p style="color: gray;">Company RN . full-time</p>
+              <h1 class="text1"">Senior Full Stack Developer <br>(React & Node JS)</h1>
+              <p class="look" style="border: 1px rgb(245, 69, 69) solid; background-color: rgb(255, 235, 235); border-radius: 20px; width: 120px; padding: 3px; color: rgb(118, 31, 31);">in the spotlight</p>
+              <div class="USA">
+                  <p class="look" style="border: 1px rgb(69, 245, 122) solid; background-color: rgb(235, 252, 235); border-radius: 20px; width: 120px; padding: 3px; color: green;">Mantreal, CA</p>
+                  <!-- <p style="border: 1px rgb(84, 245, 69) solid; background-color: rgb(237, 255, 237); border-radius: 20px; width: 120px; padding: 3px; color: green;">Remote</p> -->
+              </div>
+            </center>
+      </div>
+    </a>
+</div>
+
+<div class="job-box">
+
+    <a class="ancher-tag" href="">
+        <div class="job-box1">
+            <center>
+              <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75513_company-02.png" alt="wait..." width="70">
+              <p style="color: gray;">Company BB . full-time</p>
+              <h1 class="text1">Android/Kotlin Developer</h1>
+              <p class="look" style="border: 1px rgb(245, 69, 69) solid; background-color: rgb(255, 235, 235); border-radius: 20px; width: 120px; padding: 3px; color: rgb(118, 31, 31);">in the spotlight</p>
+              <div class="USA">
+                  <p class="look" style="border: 1px rgb(69, 245, 122) solid; background-color: rgb(235, 252, 235); border-radius: 20px; width: 120px; padding: 3px; color: green;">Quebec, CA</p>
+                  <!-- <p style="border: 1px rgb(84, 245, 69) solid; background-color: rgb(237, 255, 237); border-radius: 20px; width: 120px; padding: 3px; color: green;">Remote</p> -->
+              </div>
+            </center>
+      </div>
+    </a>
+
+
+<a class="ancher-tag-2" href="">
+    <div class="job-box1">
+        <center>
+          <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75515_company-04.png" alt="wait..." width="70">
+          <p style="color: gray;">Company JG . full-time</p>
+          <h1 class="text1">Flutter Application Developer</h1>
+          <p class="look" style="border: 1px rgb(245, 69, 69) solid; background-color: rgb(255, 235, 235); border-radius: 20px; width: 120px; padding: 3px; color: rgb(118, 31, 31);">in the spotlight</p>
+          <div class="USA">
+              <p class="look" style="border: 1px rgb(69, 245, 122) solid; background-color: rgb(235, 252, 235); border-radius: 20px; width: 160px; padding: 3px; color: green;">Dublin, IR</p>
+              <!-- <p style="border: 1px rgb(84, 245, 69) solid; background-color: rgb(237, 255, 237); border-radius: 20px; width: 120px; padding: 3px; color: green;">Remote</p> -->
+          </div>
+        </center>
+  </div>
+</a>
+
+
+<a class="ancher-tag-3" href="">
+<div class="job-box1">
+    <center>
+      <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75514_company-03.png" alt="wait..." width="70">
+      <p style="color: gray;">Company HH . full-time</p>
+      <h1 class="text1">Senior C# . Net Application Developer</h1>
+      <p class="look" style="border: 1px rgb(245, 69, 69) solid; background-color: rgb(255, 235, 235); border-radius: 20px; width: 120px; padding: 3px; color: rgb(118, 31, 31);">in the spotlight</p>
+      <div class="USA">
+          <p class="look" style="border: 1px rgb(69, 245, 122) solid; background-color: rgb(235, 252, 235); border-radius: 20px; width: 120px; padding: 3px; color: green;">Austin, USA</p>
+          <!-- <p style="border: 1px rgb(84, 245, 69) solid; background-color: rgb(237, 255, 237); border-radius: 20px; width: 120px; padding: 3px; color: green;">Remote</p> -->
+      </div>
+    </center>
+</div>
+</a>
+</div> <br><br><br><br>
+
+
+
+ <h1 class="recent">Recent jobs</h1>
+
+       <div class="rct-job1">
+
+                <div class="recent-job">
+                    <div class="react">
+                     <div>
+                         <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75518_company-07.png" alt="" width="50">
+                         
+                     </div>
+                 <div>
+                    <p>Company AQ  . freelancer</p>
+                    <h1 style="margin-top: 0px; font-weight: 300; font-size: 1.6rem;">React Native Mobile Developer</h1>
+                 </div>
+                 <!-- <div>
+                     <button>sep 14, 2024</button> <br>
+                     <button>palo alto, CA</button>
+                     <button>Remote</button>
+                 </div> -->
+     </div>
+
+            <div class="react">
+                     <div>
+                       <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75519_company-08.png" alt="" width="50">
+                     </div>
+        <div>
+            <p>Company LK  . full-time</p>
+            <h1 style="margin-top: 0px; font-weight: 300; font-size: 1.6rem;">Senior JavaScript Developer</h1>
+        </div>
+    </div>
+
+         <div class="react">
+                 <div>
+                   <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f7551a_company-09.png" alt="" width="50">
+                             
+                  </div>
+          <div>
+                     <p>Company PD  . part-time</p>
+                         <h1 style="margin-top: 0px; font-weight: 300; font-size: 1.6rem;">Python Developer</h1>
+                         </div>
+                     </div>
+
+                     <div class="react">
+                         <div>
+                         <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f7551b_company-10.png" alt="" width="50">
+                         
+                         </div>
+                     <div>
+                         <p>Company RT  . internship</p>
+                         <h1 style="margin-top: 0px; font-weight: 300; font-size: 1.6rem;">PHP Developer
+                         </h1>
+                     </div>
+                 </div>
+
+                 <div class="react">
+                     <div>
+                     <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f7551c_company-11.png" alt="" width="50">
+                     
+                     </div>
+                     <div>
+                         <p>Company IU  . full-time</p>
+                         <h1 style="margin-top: 0px; font-weight: 300; font-size: 1.6rem;">Senior Web Developer</h1>
+                     </div>
+                 </div>
+
+
+                 <div class="react">
+                     <div>
+                     <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f7551d_company-12.png" alt="" width="50">
+                     
+                     </div>
+                 <div>
+                     <p>Company OB  . full-time</p>
+                     <h1 style="margin-top: 0px; font-weight: 300; font-size: 1.6rem;">JAVA- Developer</h1>
+                 </div>
+             </div>
+
+
+             <div class="react">
+                 <div>
+                 <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f7551e_company-13.png" alt="" width="50">
+                 
+                 </div>
+             <div>
+                 <p>Company SS  . freelancer</p>
+                 <h1 style="margin-top: 0px; font-weight: 300; font-size: 1.6rem;">Software Engineer (C++)</h1>
+             </div>
+             </div>
+
+             <div class="react">
+                 <div>
+                 <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f7551f_company-14.png" alt="" width="50">
+                 
+                 </div>
+             <div>
+                 <p>Company KW  . full-time</p>
+                 <h1 style="margin-top: 0px; font-weight: 300; font-size: 1.6rem;">Swift UI Developer (iOS, macOS, watchOS)  </h1>
+             </div>
+             </div>
+
+             <div class="react">
+                 <div>
+                 <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75520_company-15.png" alt="" width="50">
+                 
+                 </div>
+             <div>
+                 <p>Company DS  . internship</p>
+                 <h1 style="margin-top: 0px; font-weight: 300; font-size: 1.6rem;">Ruby on Rails Developer</h1>
+             </div>
+             </div>
+
+             <div class="react">
+                 <div>
+                 <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75521_company-16.png" width="50">
+                 
+                 </div>
+             <div>
+                 <p>Company FF  . full-time</p>
+                 <h1 style="margin-top: 0px; font-weight: 300; font-size: 1.6rem;">AWS Full Stack Enginner (Node.js, TypeScript)</h1>
+             </div>
+             </div>
+
+             <div class="react">
+                 <div>
+                 <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75522_company-17.png" alt="" width="50">
+                 
+                 </div>
+             <div>
+                 <p>Company CV  . part-time</p>
+                 <h1 style="margin-top: 0px; font-weight: 300; font-size: 1.6rem;">Kotlin Multiplatform Mobile (KMM) Developer</h1>
+             </div>
+             </div>
+
+                <div class="react">
+                            <div>
+                            <img src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f7550b/66f2f083f5b8de8e38f75523_company-18.png" alt="" width="50">
+                            
+                            </div>
+                        <div>
+                            <p>Company FT  . freelancer</p>
+                            <h1 style="margin-top: 0px; font-weight: 300; font-size: 1.6rem;">Python + SQL Developer</h1>
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="work">
+                <p>Work with the most <br> talented and accomplished  <br>developers on a freelance, <br>    contract, part-time, or  <br>full-time basis.</p>
+                <button class="post-job"> Post a job </button>
+            </div>
+
+       </div>        <br><br><br>
+
+           <center>
+            <a href=""><button class="job-btn"> Browse all jobs </button></a>
+           </center>  
+            <br><br><br><br><br>   <hr>
+
+            <div class="book">
+                <div class="Dev-1">
+                    <div>
+                        <p>© 2024 Devtask.️</p>
+                       </div>
+                       <div>
+                        <p>Privacy Policy</p>
+                       </div>
+                </div>
+                <div class="image1">
+                    <img class="img-1" src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f7553c_x.svg" alt="" width="20">
+                    <img class="img-1" src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f7554e_instagram.svg" alt="" width="20">
+                    <img class="img-1" src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f7554f_youtube.svg" alt="" width="20">
+                    <img class="img-1" src="https://cdn.prod.website-files.com/66f2f083f5b8de8e38f75505/66f2f083f5b8de8e38f75550_linkedin.svg" alt="" width="20">
+                </div>
+            </div> <hr>
+
+           <div class="cladd1">
+            <div>
+                <p>Made by <span style="color: #244eda;">Riffmax</span> & Powered by <span style="color: #244eda;">Webflow</span></p>
+            </div>
+            <div style="display: flex; gap: 20px;">
+                  <p><b>Style Guide</b></p>
+                    <p><b>Instructions</b></p>
+                    <p><b>Changelog</b></p>
+                    <p><b>Licenses</b></p>
+            </div>
+           </div>
+    </body>  
+</html>
