@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@400..700&family=Doto:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body{
+            background-color: #161616;
+        }
+        .l-box{
+              width: 300px;
+              background-color: #161616;
+              color: pink;
+              text-align: center;
+              padding: 10px;
+              height: 90vh;
+              border-radius: 40px;
+              border: 1px solid gray;
+              margin-left: 40px;
+              margin-top: 20px;
+              position: fixed;
+              box-shadow: 2px 2px 2px rgba(255, 0, 230, 0.979);
+        }
+        .text{
+            
+            text-align: left;
+            margin: 0px 35px;
+            color: #fff;
+            line-height: 1.2;
+            font-weight: 700;
+            /* letter-spacing: 1px; */
+            word-spacing: 10px;
+            margin-top: 5px;
+        }
+        .work-btn{
+            border: none;
+            padding: 10px;
+            width: 250px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+            border-radius: 40px;
+            margin-top: 20px;
+            background:radial-gradient(ellipse farthest-corner at right bottom, #f8b8ee 10%, #e4aadf 20%, #f0b5f1 30%, #cb82c1 80%);
+            box-shadow: 2px 2px 1px rgb(0, 0, 0);
+        }
+        .hero-img{
+            border-radius: 20px;
+            /* margin-top: 60px; */
+            
+        }
+        .Alex{
+            font-size: 2rem;
+            padding: 15px;
+        }
+        .main-top{
+            display: flex;
+            /* justify-content: space-between; */
+
+        }
+        
+        header ul li a{
+            color: #f0b5f1;
+            text-decoration: none;
+            border: #6f6f6f45 1px solid;
+            padding: 10px;
+            border-radius: 20px;
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            position: fixed;
+            /* filter: blur(10); */
+            box-shadow: 2px 2px 5px rgb(255, 0, 221);
+            backdrop-filter: blur(5px);
+        }
+        header ul li a:hover{
+            color: #ffffff;
+            transition: 0.5s;
+            filter: drop-shadow(2px 2px 1px rgb(255, 0, 221));
+        }
+        .right{
+            color: #dadada;
+        }
+        header ul{
+            display: flex;
+            gap: 150px;
+            margin-left: 400px;
+            justify-content: center;
+            padding: 30px;
+            font-size: 1.5rem;
+            list-style-type: none;
+            
+            
+        }
+        .digiral-1{
+            margin-left: 430px;
+            font-size: 5rem;
+            font-weight: normal;
+            margin-top: 100px;
+            color: #d7bcd5;
+        }
+        .my-work-btn{
+            margin-left: 450px;
+            margin-top: 30px;
+            border-radius: 1;
+        }
+        .my-work-1{
+            padding: 10px;
+            font-size: 1.2rem;
+            margin: 0px 10px;
+            border: none;
+            background-color: transparent;
+            color: #dadada;
+            /* border:  1px solid; */
+            border-width: 2px;
+            border-style: solid;
+            /* border-image: linear-gradient( 30deg, #d421ce97, rgb(198, 0, 198), rgb(255, 171, 252), rgba(174, 32, 170, 0.653)) 10; */
+            border: 2px;
+            border-style: solid;
+            border-color: #ff00dd #ffffff #ff00ee #ffffff;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgb(255, 0, 221);
+        }
+        * .Portfolio{
+            margin-left: 430px;
+            margin-top: 100px;
+            font-size: 2rem;
+        }
+        #Portfolio-1{
+            text-decoration: none;
+            color: #d7bcd5;
+            padding:10px 40px;
+            margin: 20px;
+            border: gray 1px solid;
+            height: 50px;
+            width: 100vh;
+            /* border-width: 2px; */
+            /* border-style: solid; */
+            /* border-image: linear-gradient( 30deg, #d421ce97, rgb(198, 0, 198), rgb(255, 171, 252), rgba(174, 32, 170, 0.653)) 10; */
+            border-radius: 20px;
+            border: 2px;
+            border-style: solid;
+            border-color: #ff00dd #ffffff #ff00ee #ffffff;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgb(255, 0, 221);
+        }
+        
+        .featured{
+            margin-top: 20px;
+            padding: 20px;
+            font-size: 4rem;
+            color: #fac1f5;
+        }
+        .featured:hover{
+            text-decoration: underline;
+            text-underline-offset: 15px;
+            color:#dadada;
+
+        }
+        .Portfolio div img{
+            border-radius: 20px;
+            margin: 5px;
+        }
+        .About-Me{
+            margin-left: 430px;
+            margin-top: 50px;
+            
+        }
+        .anout-box{
+            display: flex;
+            align-items: center;
+            /* justify-content: space-between; */
+            margin: 0px 20px;
+            gap: 20px;
+            
+
+        }
+        .about h1{
+            font-size: 3rem;
+            color: #ffe1fc;
+            /* color: #d7bcd5, #f0b5f1, #cb82c1; */
+        }
+        .anout-box div{
+            border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient( 30deg, #d421ce97, rgb(198, 0, 198), rgb(255, 171, 252), rgba(174, 32, 170, 0.653)) 10;
+            color: #ffdcfc;
+            padding: 25px 80px;
+            border-radius: 20px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        .anout-box h5{
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+        .about-btn{
+            text-decoration: none;
+            font-size: 2rem;
+            color: #dadada;
+            /* border-radius: 20px; */
+            /* border: 4px rgb(135, 28, 141) solid; */
+            padding: 5px 20px;
+            display: block;
+            margin-bottom: 10px;
+            width: fit-content;
+            box-shadow: 2px 2px 5px rgb(242, 71, 211);
+            z-index: 2;
+            border-radius: 20px;
+            border: 2px;
+            border-style: solid;
+            border-color: #ff00dd #ffffff #ff00ee #ffffff;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgb(255, 0, 221);
+        }
+        .about-btn::before{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: conic-gradient(pink,transparent, pink, transparent) 1;
+            left: 0px;
+            top: 0px;
+            animation: rotater 3s linear infinite;
+            z-index: -1;
+        }
+        @keyframes rotater{
+            0%{
+                transform: rotate(0deg) scale(3);
+            }
+            100%{
+                transform: rotate(360deg) scale(3);
+            }
+        }
+        .wonder{
+            display: flex;
+            /* line-height: 2; */
+            margin-left: 430px;
+            color: #e4c1e2;
+        }
+        .changed{
+            font-weight: 700;
+            font-size: 1.2rem;
+            line-height: 1.3;
+        }
+        .names{
+            font-weight: 400;
+            font-size: 1.1rem;
+            margin-left: 0px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .my-work-2{
+            padding: 10px;
+            font-size: 1.2rem;
+            margin: 50px 10px;
+            /* border: none; */
+            background-color: transparent;
+            /* color: #dadada; */
+            /* border:  1px solid; */
+            border-width: 2px;
+            border-style: solid;
+            /* border-image: linear-gradient( 30deg, #d421ce97, rgb(198, 0, 198), rgb(255, 171, 252), rgba(174, 32, 170, 0.653)) 10; */
+            border-radius: 10px;
+            color:#e4aadf;
+            margin-left: 430px;
+            border-radius: 20px;
+            border: 2px;
+            border-style: solid;
+            border-color: #ff00dd #ffffff #ff00ee #ffffff;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgb(255, 0, 221);
+
+        }
+        .frontend-digital{
+            margin-left: 430px;
+            display: flex;
+            gap: 20px;
+            margin-right: 20px;
+            border-radius: 20px;
+            
+        }
+        .frontend{
+            flex: 1;
+            line-height: 2;
+            background-color: #151515;
+            position: relative;
+            overflow: hidden;
+            padding: 1px;
+            z-index: 3;
+            height: 60vh;
+            height: 80vh;
+
+        }
+        .frontend::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: conic-gradient(pink, transparent, transparent, rgb(255, 0, 251), transparent, transparent, rgb(125, 22, 116), transparent, transparent);
+            left: 0px;
+            top: 0px;
+            animation: rotater 3s linear infinite;
+            z-index: -3;
+        }
+        .digital{
+           flex: 1;
+           line-height: 2;
+           background-color: #161616;
+            position: relative;
+            overflow: hidden;
+            padding: 1px;
+            z-index: 3;
+            height: 80vh;
+
+        }
+        .digital::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: conic-gradient(rgb(255, 0, 208), transparent, transparent, rgb(167, 40, 172), transparent, transparent, rgb(255, 84, 241), transparent, transparent);
+            left: 0px;
+            top: 0px;
+            animation: rotater 3s linear infinite;
+            z-index: -3;
+        }
+        .content{
+            min-width: 100%;
+            height: 100%;
+            background-color: #131212;
+            z-index: 2;
+            color: #fff;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+            text-align: justify;
+        }
+        .content h1{
+            font-size: 1.8rem;line-height: 2;
+        }
+        .content h3{
+            font-weight: 700;
+            color: rgb(180, 176, 176);
+
+        }
+        .content img{
+            width: 100%;
+            height: 60%;
+            margin-top: 20px;
+            padding: 0px;
+        }
+        .jod-dis{
+            border: none;
+            padding: 5px 20px;
+            margin: 10px;
+            font-size: 1.1rem;
+            border-radius: 20px;
+            background-color: transparent;
+            color: gray;
+            border: 1px solid gray;
+            cursor: pointer;
+        }
+        .My-education{
+            margin-left: 430px;
+        }
+        .practical{
+            font-size: 3rem;
+            font-weight: 400;
+            word-spacing: 10px;
+            color: #e4aadf;
+            margin-bottom: 20px;
+        }
+        .seem{
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: rgb(112, 108, 108);
+        }
+        .My-education-1{
+            font-size: 2.6rem;
+            font-weight: 500;
+            padding: 30px 0px;
+            color: #c99dc3;
+            /* text-decoration: dashed; */
+            text-underline-offset: 15px;
+        }
+        .education-levels{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 10px;
+            
+        }
+        hr{
+            border: none;
+            border: 1px solid rgb(255, 2, 247);
+            box-shadow: 2px 2px 10px darkorchid;
+        }
+        .Years{
+            color: gray;
+        }
+        .education-levels h1{
+            font-size: 1.7rem;
+            font-weight: 500;
+            color: #ff96f8;
+        }
+        .education-levels p{
+            font-size: 1.1rem;
+            color: #dadada;
+            font-weight: 600;
+        }
+        .My-favourite{
+            margin-left: 430px;
+        }
+        .icons div img{
+            width: 80px;
+            filter: drop-shadow(2px 2px 2px #ff0aef);
+        }
+        .icons div img:hover{
+            filter: drop-shadow(0px 0px 15px #000000);
+        }
+        .icons{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .icons div{
+            width: 150px;
+            border: 2px;
+            border-style: solid;
+            border-color: #ff00fb rgb(255, 255, 255)  rgb(255, 255, 255) #ff00e6;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+            
+        }
+        .icons div:hover{
+            transition: 0.5s;
+            transform: translateX(5px);
+            box-shadow: 5px 5px 5px #ff00dd;
+        }
+        .tools{
+            font-size: 3rem;
+            margin-bottom: 100px;
+            color: #ffb7fa;
+            font-weight: 600;
+            filter: drop-shadow(1px 1px 1px rgb(255, 22, 220));
+            z-index: -1;
+        }
+        .icons div p{
+            color: #b173a9;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <section class="main">
+         <section class="main-top">
+                 <div class="left">
+                         <div class="l-box">
+                                 <h1 class="Alex">Alex <br>
+                                    Walker</h1>
+                                 <img class="hero-img" src="https://mixdesign.club/themeforest/braxton/img/avatars/1024x1024_a01.webp" alt="" width="250">
+                                    <div class="text">
+                                    <p>Specialization:</p>
+                                    <p>UI/UX designer</p>
+                                    <p>and frontend developer</p>
+                                    <p>Based in:</p>
+                                    <p>Odesa, Ukraine</p>
+                                    </div>
+                                    <button class="work-btn">Let's Work Together!</button>
+                         </div>
+                         
+                 </div>
+                 <div class="right">
+                                     <header>
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#Portfolio-2">Portfolio</a></li>
+                                            <li><a href="#About-me01">About Me</a></li>
+                                            <li><a href="#Resume-11">Resume</a></li>
+                                            <li><a href="#Contact">Contact</a></li>
+                                        </ul>
+                                     </header>
+                                  <section class="digiral-1">
+                                       <div>
+                                        <h1 class="digiral">I'm Alex Walker <br>
+                                            Digital designer and <br> illustrator.</h1>
+                                       </div>
+                                  </section>
+
+                                  <section>
+                                    <div class="my-work-btn">
+                                          <button class="my-work-1">My Work</button>
+                                          <button class="my-work-1"> Download CV</button>
+                                    </div>
+                                  </section>
+
+                                  <section class="Portfolio" id="Portfolio-2">
+                                      <h4><a href="#" id="Portfolio-1"> 🌟Portfolio</a></h4>
+                                      <h1 class="featured">Check out my featured <br> projects</h1>
+                                      <div>
+                                        <img src="https://mixdesign.club/themeforest/braxton/img/works/1400x1400_w01.webp" alt="" width="400">
+                                        <img src="https://mixdesign.club/themeforest/braxton/img/works/1400x1400_w02.webp" alt="" width="400">
+                                        <img src="https://mixdesign.club/themeforest/braxton/img/works/1400x1400_w03.webp" alt="" width="400">
+                                        <img src="https://mixdesign.club/themeforest/braxton/img/works/1400x1400_w04.webp" alt="" width="400">
+                                      </div>
+
+                                  </section>
+
+                                  <section class="About-Me" id="About-me01">
+                                          <div class="about">
+                                                  <h5><a href="#" class="
+                                                    about-btn">🌟About Me</a></h5>
+                                                  <h1>Turning complex problems into <br> simple design</h1>
+                                                   <div class="anout-box">
+                                                          <div>
+                                                              <h1>40+</h1>
+                                                              <h5>Happy clients</h5>
+                                                          </div>
+                                                          <div>
+                                                            <h1>02+</h1>
+                                                            <h5>Years of <br> experience</h5>
+                                                          </div>
+                                                          <div>
+                                                            <h1>50+</h1>
+                                                            <h5>Projects done</h5>
+                                                          </div>
+                                                   </div>
+                                          </div>
+                                  </section>
+                      <section class="wonder">
+                           <div class="changed">
+                            <p>I wonder if I've been changed in the night? Let me think. Was I the same when I got up this morning? I almost think I can remember feeling a little different. But if I'm not the same, the next question is 'Who in the world am I?' Ah, that's the great puzzle!</p> <br><br>
+                            <p>Be what you would seem to be - or, if you'd like it put more simply - never imagine yourself not to be otherwise than what it might appear to others that what you were or might have been was not otherwise than what you had been would have appeared to them to be otherwise.</p>
+                           </div>
+                           <div>
+                            <pre class="names">
+                                Name
+                                <b>Alex Walker</b>
+                                Phone
+                                <b>+1 212-708-9400</b>
+                                Email
+                                <b>hello@yourdomain.com</b>
+                                Location
+                                <b>Odesa, Ukraine</b>
+                            </pre>
+                           </div>
+                      </section>  
+                        <button class="my-work-2"> Download CV</button>    
+                        
+                        <br><br><br><br><br>
+
+                        <section class="frontend-digital">
+                            <div class="frontend">
+                                     <div class="content">
+                                        <h1>Frontend
+                                            development</h1>
+                                            <div>
+                                                <button class="jod-dis">UI/UX Design</button>
+                                                <button class="jod-dis">Design to Code</button>
+                                            </div>
+                                            <h3>I work with HTML/CSS, Framer and WordPress.</h3>
+                                            <img src="https://mixdesign.club/themeforest/braxton/img/services/1200x900_s01.webp" alt="" width="100">
+                                     </div>
+                            </div>
+                            <div class="digital">
+                                    <div class="content">
+                                        <h1>Digital art and graphic design</h1>
+                                    <div>
+                                        <button class="jod-dis">Illustrations</button>
+                                        <button class="jod-dis">AI Experiments</button>
+                                    </div>
+                                    <h3>I use Adobe Photoshop, Fresco and Blender to create illustrations and 3D renders for my clients and stocks.</h3>
+                                    <img src="https://mixdesign.club/themeforest/braxton/img/services/1200x900_s02.webp" alt="" width="100">
+                                    </div>
+                            </div>
+                        </section> <br><br><br><br><br>
+
+                        <section class="frontend-digital">
+                            <div class="frontend">
+                                     <div class="content">
+                                        <h1>SEO/Digital marketing solutions</h1>
+                                            <div>
+                                                <button class="jod-dis">Social Media</button>
+                                                <button class="jod-dis">Analytics</button>
+                                            </div>
+                                            <h3>Social media content plans, media monitoring, email and text messaging and search engine optimization.</h3>
+                                            <img src="https://mixdesign.club/themeforest/braxton/img/services/1200x900_s03.webp" alt="" width="100">
+                                     </div>
+                            </div>
+                            <div class="digital">
+                                    <div class="content">
+                                        <h1>Brand
+                                            identity</h1>
+                                    <div>
+                                        <button class="jod-dis">Logo Design</button>
+                                        <button class="jod-dis">Style Guides</button>
+                                    </div>
+                                    <h3>I help my clients to develop a personality and brand voice, design the brand look and logo.</h3>
+                                    <img src="https://mixdesign.club/themeforest/braxton/img/services/1200x900_s04.webp" alt="" width="100">
+                                    </div>
+                            </div>
+                        </section>
+                        <button class="my-work-2" id="Resume-11"> 🌟 Resume</button>
+
+                        <section class="My-education">
+                            <h1 class="practical">Education and practical <br> experience</h1>
+                            <p class="seem">Be what you would seem to be - or, if you'd like it put more simply - never imagine yourself not to be otherwise than what it might appear to others that what you were or might have been was not otherwise than what you had been would have appeared to them to be otherwise.</p> <br><br><br><br><br>
+
+                            <h1 class="My-education-1">My education</h1>
+                            <hr>
+                               <div class="education-levels">
+                                    <div class="Years">
+                                           <p>2015 - 2016</p>
+                                    </div>
+                                    <div class="Academy">
+                                        <h1>Drawing Concentration</h1>
+                                        <p>Course by New York Academy of Art</p>
+                                    </div>
+                                    <div class="Intensive">
+                                        <p>Intensive drawing courses that present the <br> fundamental principles of drawing.</p>
+                                    </div>
+                               </div>
+                               <hr>
+                               <div class="education-levels">
+                                <div class="Years">
+                                       <p>2019 - 2021</p>
+                                </div>
+                                <div class="Academy">
+                                    <h1>UI/UX Design Specialization</h1>
+                                    <p>Course by California Institute of Arts</p>
+                                </div>
+                                <div class="Intensive">
+                                    <p>Research, design, and prototype effective, <br> visually-driven websites and apps.</p>
+                                </div>
+                           </div>
+                           <hr>
+                           <div class="education-levels">
+                            <div class="Years">
+                                   <p>2022</p>
+                            </div>
+                            <div class="Academy">
+                                <h1>UI/UX Designer</h1>
+                                <p>Course by Coursera</p>
+                            </div>
+                            <div class="Intensive">
+                                <p>This cource is about how to complete the <br> design  process from beginning to end.</div>
+                       </div>
+                       <hr>
+
+                       <br><br><br><br> <br><br><br>
+
+
+                       <h1 class="My-education-1">Work experience</h1>
+                            <hr>
+                               <div class="education-levels">
+                                    <div class="Years">
+                                           <p>2018 - 2019</p>
+                                    </div>
+                                    <div class="Academy">
+                                        <h1>Illustrator</h1>
+                                        <p>in the Creative Mind agency</p>
+                                    </div>
+                                    <div class="Intensive">
+                                        <p>I created original images for a range of digital and <br>
+                                             printed products.</p>
+                                    </div>
+                               </div>
+                               <hr>
+                               <div class="education-levels">
+                                <div class="Years">
+                                       <p>2019 - 2021</p>
+                                </div>
+                                <div class="Academy">
+                                    <h1>Graphic Designer</h1>
+                                    <p>in the Moon Light agency</p>
+                                </div>
+                                <div class="Intensive">
+                                    <p>My job was to create adverts, branding, signage and <br> other media products.</p>
+                                </div>
+                           </div>
+                           <hr>
+                           <div class="education-levels">
+                            <div class="Years">
+                                   <p>2024 - now </p>
+                            </div>
+                            <div class="Academy">
+                                <h1>UI/UX Designer</h1>
+                                <p>in the Moon Light agency</p>
+                            </div>
+                            <div class="Intensive">
+                                <p>I am actively involved in creating user interfaces for <br> mobile apps and websites.</div>
+                       </div>
+                       <hr> 
+                       <br><br><br><br><br><br>
+                        </section>
+                        <section class="My-favourite">
+
+                            <div class="icon">
+                                <h1 class="tools">My favourite tools</h1>
+                                <div class="icons">
+                                        <div>
+                                            <img src="https://mixdesign.club/themeforest/braxton/img/icons/icon-photoshop.svg" alt="">
+                                            <p>Photoshop</p>
+                                        </div>
+
+                                        <div>
+                                            <img src="https://mixdesign.club/themeforest/braxton/img/icons/icon-figma.svg" alt="">
+                                            <p>Figma</p>
+                                        </div>
+
+                                        <div>
+                                            <img src="https://mixdesign.club/themeforest/braxton/img/icons/icon-illustrator.svg" alt="">
+                                            <p>Illustrator</p>
+                                        </div>
+
+                                        <div>
+                                            <img src="https://mixdesign.club/themeforest/braxton/img/icons/icon-scketch.svg" alt="">
+                                            <p>Sketch</p>
+                                        </div>
+
+                                        <div>
+                                            <img src="https://mixdesign.club/themeforest/braxton/img/icons/icon-blender.svg" alt="">
+                                            <p>Blender</p>
+                                        </div>
+
+                                        <div>
+                                            <img src="https://mixdesign.club/themeforest/braxton/img/icons/icon-html.svg" alt="">
+                                            <p>HTML5</p>
+                                        </div>
+
+                                        <div>
+                                            <img src="https://mixdesign.club/themeforest/braxton/img/icons/icon-css.svg" alt="">
+                                            <p>CSS3</p>
+                                        </div>
+
+                                        <div>
+                                            <img src="https://mixdesign.club/themeforest/braxton/img/icons/icon-notion.svg" alt="">
+                                            <p>Notion</p>
+                                        </div>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <section id="Contact">
+                            <button class="my-work-2"> 🌟 Contact</button>
+
+                        </section>
+
+                 </div>
+         </section>
+    </section>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+</body>
+</html>
